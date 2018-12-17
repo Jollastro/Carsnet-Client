@@ -1,0 +1,30 @@
+<ion-view title="UserCars" id="page4" hide-back-button="true">
+    <ion-content padding="true" class="has-header">
+        <button class="button button-block button-dark button-small" ng-click="logout()">Logout</button> 
+        <ion-list id="events-list2">
+            <ion-item ng-repeat="car in cars track by $index">
+                <div class= "row">
+                    <div class = "col">
+                        <b>Marca: </b><p> 
+                        <b>Modello: </b><p> 
+                        <b>Tipo: </b><p>
+                        <b>Carburazione: </b><p>
+                        <b>Prezzo: </b><p>
+                        <b>Concessionaria: </b><p>
+                    </div>
+                    <div class = "col">
+                    </div>
+                    <div class = "col" align="center">
+                        {{car.marca}} <p> 
+                        {{car.modello}} <p> 
+                        {{car.tipo}} <p>
+                        {{car.carburazione}} <p>
+                        {{car.prezzo}}€ <p>
+                        {{car.concessionaria}} <p>
+                    </div>
+                </div>
+                <button class="button button-block button-positive button-login button-small" ng-click="buy()">Acquista</button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

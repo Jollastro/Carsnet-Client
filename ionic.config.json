@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "app_id": "",
+  "type": "ionic1",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

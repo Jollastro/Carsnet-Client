@@ -1,0 +1,33 @@
+<ion-view title="Aggiungi macchina" id="page9" ng-controller="addCarCtrl">
+    <ion-content padding="true" class="has-header">
+        <div class="row row-center">
+            <div class="col">
+                
+                <div id="login-form"></div>
+                    
+                <form>
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="marca" ng-model="data.marca">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="modello" ng-model="data.modello">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="tipo" ng-model="data.tipo">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="carburazione" ng-model="data.carburazione">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="prezzo" ng-model="data.prezzo">
+                        </label>                         
+                    </div>
+                        
+                    <button class="button button-block button-positive button-login" ng-click="submit()">Aggiungi</button>
+                </form>
+                    
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

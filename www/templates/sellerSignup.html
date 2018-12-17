@@ -1,0 +1,36 @@
+<ion-view title="SellerSignup" id="page6" ng-controller="sellerSignupCtrl">
+    <ion-content padding="true" class="has-header">
+        <div class="row row-center">
+            <div class="col">
+                
+                <div id="signup-form"></div>
+                    
+                <form>
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="nome" ng-model="data.nome">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="cognome" ng-model="data.cognome">
+                        </label>
+                        <label class="item item-input">
+                            <input type="email" placeholder="email" ng-model="data.email">
+                        </label>
+                        <label class="item item-input">
+                            <input type="password" placeholder="password" ng-model="data.password">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="concessionaria" ng-model="data.concessionaria">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="indirizzo concessionaria" ng-model="data.indirizzo_concessionaria">
+                        </label>
+                    </div>
+                        
+                    <button class="button button-block button-positive button-login" ng-click="submit()">Signup</button>
+                </form>
+                    
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
